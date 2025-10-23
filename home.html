@@ -19,7 +19,7 @@
 
          <a href="https://discord.gg/DQnZdEcbhc"><div class="title">
 
-           <div class="text glowIn"></div>
+           <div class="text"> </div>
 
         </div></a>
 
@@ -106,19 +106,4 @@ const next = () => {
   counter = (counter + 1) % phrases.length;
 };
 next();
-</script>
-
-<script>
-    "use strict";
-    var glowIn = document.querySelectorAll(".glowIn");
-    glowIn.forEach(function (glowIn) {
-    var letters = glowIn.textContent.split("");
-    glowIn.textContent = "";
-    letters.forEach(function (letter, i) {
-    var span = document.createElement("span");
-    span.textContent = letter;
-    span.style.animationDelay = i * 0.08 + "s";
-    glowIn.append(span);
-    });
-    });                                                                            
 </script>
